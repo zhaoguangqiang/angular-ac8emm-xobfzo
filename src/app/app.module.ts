@@ -13,6 +13,9 @@ import { ProductAlertsComponent } from
 import { ProductDetailsComponent } from
 './product-details/product-details.component';
 
+import { CartComponent }  from
+'./cart/cart.component'
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -21,6 +24,7 @@ import { ProductDetailsComponent } from
       { path: '', component: ProductListComponent },
       { path: '', component: ProductAlertsComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
+      { path: 'cart', component: CartComponent }
     ])
   ],
   declarations: [
